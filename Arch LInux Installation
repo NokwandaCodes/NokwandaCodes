@@ -1,0 +1,25 @@
+#Installing Arch Linux -- 
+
+I realised that I need to learn the basic stuff, if I ever want to actually apply weverything I have learnt into work, or create projects. One of the biggest gabs I had, was git, the OS and the terminal.
+THe terminal scared me. It all looked so cryptic, and I always feared that if I toughed one wrong thing,everything will just crash.
+WHich is why I decided to install LInux - I needed to remove all the apps and drama that windows have, I wanted to be able to easily look at what is under the hood (well not the hardware yet).
+But I also have a huge knowledge gab about the stack, so I though something like arch linux would be perfect since I will be forced to do everything muself.
+
+Installing linux via a virtual box was not sucessful for me, so I had to order the USB (boo!). But the installation itself was more efficient, than creating virtual disks, the ventoy drama and GRUB2wi etc.
+
+It was kind of challenging, but I managed to create partitions, which was the most dificult part for me. 
+At first, I still had partitions with the windows stuff, which i removed by simply deleting those partitions. I then I create the boot partition and efi,and allocated memory.AT some point I was able to type nvme0n1pa very fast, because stuff wasn't working out lol.
+One challenge was that for the boot partition, I kept on saying allocate 100%, but that kept on failing, because there was just space allocated as "free space" (not sure what this is called).
+When I finaly figured that out, I rushed to unmount , exit chroot and reboot.
+
+Which was a fail, because I still didn't set up the boot. 
+THat's when I started installing GRUB, and a whole bunch of directories, installations and mounting I later,it worked.
+
+I have to say, I still don't understand what mounting is about, this is something I will need to look up soon.
+BUt one thing that tripped me up if when a reboot failed, I would forget to connect to the wifi, which was fustrating when installations failed and I had to go aha!, and start everything again.
+
+WHen I did the installation, I'd picked GNOME, which is decent enough, but I realised that I still want something familiar, so I installed KDE plasma and customized it to resemble windows.
+I like teh fact that I didn't need to go through the whole process of install git bash, i simply had the terminal and was ready for ls and cd. 
+Arch linux is working (Yey), but I still have a lot of poking around to do, so that I can safely say I understand a bit about the OS. Just a bit.
+
+Nextime, I should probably real the whole installation guide before starting, so that I am familiar with the steps and what to avoid.
